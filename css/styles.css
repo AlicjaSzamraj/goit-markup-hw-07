@@ -270,6 +270,7 @@ img {
 .display-style {
   display: flex;
   gap: 24px;
+  flex-direction: column;
 }
 
 .list-style {
@@ -758,4 +759,7 @@ body {
 }
 
 @media (min-width: 1158px) {
+  .display-style {
+    flex-direction: row;
+  }
 }
