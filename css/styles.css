@@ -35,6 +35,7 @@ img {
   text-transform: uppercase;
   color: var(--blue1);
   margin-right: 76px;
+  padding: 24px 0;
 }
 .link {
   text-decoration: none;
@@ -679,4 +680,45 @@ img {
 }
 .button-policy:hover {
   background-color: var(--blue2);
+}
+
+htm,
+body {
+  width: 100%;
+}
+body {
+  overflow-x: hidden;
+}
+.top-elements {
+  display: none;
+}
+.mobile-top-elements {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.mobile-top-elements button {
+  background-color: transparent;
+}
+.js-menu-container {
+  display: none;
+}
+.js-menu-container.is-open {
+  display: flex;
+}
+
+@media (min-width: 480px) {
+}
+
+@media (min-width: 768px) {
+  .top-elements {
+    display: flex;
+  }
+  .mobile-top-elements {
+    display: none;
+  }
+}
+
+@media (min-width: 1158px) {
 }
