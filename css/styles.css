@@ -108,7 +108,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--white1);
-  max-width: 496px;
+  max-width: 320px;
   margin: auto;
   margin-bottom: 48px;
 }
@@ -171,10 +171,11 @@ img {
 }
 .section-points {
   background-color: var(--white1);
-  width: calc((100% - 72px) / 4);
+  width: 264px;
   border-radius: 0px 0px 4px 4px;
   display: flex;
   flex-direction: column;
+  margin: auto;
   align-items: center;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -247,6 +248,7 @@ img {
 }
 .section-three {
   padding-bottom: 120px;
+  display: none;
 }
 .visually-hidden {
   position: absolute;
@@ -269,6 +271,7 @@ img {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .list-style {
@@ -357,6 +360,7 @@ img {
 .list-section-five {
   display: flex;
   gap: 24px;
+  flex-direction: column;
 }
 .point-customers {
   width: calc((100% - 120px) / 6);
@@ -776,11 +780,15 @@ body {
   .form-container {
     padding-left: 80px;
   }
+  .section-points {
+    width: calc((100% - 72px) / 2);
+  }
 }
 
 @media (min-width: 1158px) {
   .display-style {
     flex-wrap: nowrap;
+    flex-direction: row;
   }
   .svg-container {
     display: flex;
@@ -814,6 +822,15 @@ body {
   .form {
     display: flex;
     gap: 24px;
+    flex-direction: row;
+  }
+  .section-three {
+    display: flex;
+  }
+  .section-points {
+    width: calc((100% - 72px) / 4);
+  }
+  .list-section-five {
     flex-direction: row;
   }
 }
