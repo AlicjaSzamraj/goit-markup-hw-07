@@ -269,7 +269,7 @@ img {
 }
 .display-style {
   display: flex;
-  gap: 24px;
+  gap: 72px;
   flex-wrap: wrap;
   flex-direction: column;
 }
@@ -866,5 +866,8 @@ body {
   }
   .social-media-style {
     align-items: normal;
+  }
+  .display-style {
+    gap: 24px;
   }
 }
