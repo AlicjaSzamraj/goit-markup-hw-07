@@ -234,8 +234,6 @@ img {
   justify-content: space-between;
 }
 .container {
-  width: 100%;
-  max-width: 1158px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -389,6 +387,7 @@ img {
 }
 .icons-footer {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
 }
 .logo-and-p {
@@ -514,6 +513,7 @@ img {
 .form {
   display: flex;
   gap: 24px;
+  flex-direction: column;
 }
 .input {
   width: 264px;
@@ -559,6 +559,9 @@ img {
 }
 .form-container {
   padding-left: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 .p-modal {
   font-weight: 500;
@@ -743,6 +746,12 @@ body {
   }
 }
 @media (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -757,6 +766,15 @@ body {
   }
   .section-header {
     text-align: left;
+  }
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .form-container {
+    padding-left: 80px;
   }
 }
 
@@ -778,5 +796,24 @@ body {
   }
   .section-header {
     text-align: left;
+  }
+  .container {
+    width: 100%;
+    max-width: 1158px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .icons-footer {
+    display: flex;
+    align-items: baseline;
+  }
+  .form-container {
+    padding-left: 80px;
+  }
+  .form {
+    display: flex;
+    gap: 24px;
+    flex-direction: row;
   }
 }
