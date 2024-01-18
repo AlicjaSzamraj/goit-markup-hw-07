@@ -360,10 +360,11 @@ img {
 .list-section-five {
   display: flex;
   gap: 24px;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .point-customers {
-  width: calc((100% - 120px) / 6);
+  width: 190px;
   height: 88px;
 }
 .link-style-customer {
@@ -783,6 +784,9 @@ body {
   .section-points {
     width: calc((100% - 72px) / 2);
   }
+  .header-section-one {
+    max-width: 496px;
+  }
 }
 
 @media (min-width: 1158px) {
@@ -832,5 +836,11 @@ body {
   }
   .list-section-five {
     flex-direction: row;
+  }
+  .header-section-one {
+    max-width: 496px;
+  }
+  .list-section-five {
+    flex-wrap: nowrap;
   }
 }
