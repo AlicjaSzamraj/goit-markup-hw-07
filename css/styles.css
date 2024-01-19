@@ -877,6 +877,7 @@ body {
     text-align: left;
   }
   .style-address {
+    display: flex;
     flex-direction: column;
     gap: 12px;
   }
@@ -907,9 +908,11 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 0;
   }
   .address-points {
     padding: 24px 0;
+    padding: unset;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -1048,5 +1051,4 @@ body {
   .contact-input:focus {
     border-color: var(--blue1);
   }
-  
 }
