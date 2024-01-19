@@ -854,6 +854,9 @@ body {
   .point-customers {
     width: 168px;
   }
+  .icons-footer {
+    padding-left: 108px; 
+    justify-content:left;
 }
 
 @media (min-width: 1158px) {
