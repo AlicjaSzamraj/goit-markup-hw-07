@@ -91,7 +91,7 @@ img {
 }
 .section-one {
   background-color: var(--dark_grey1);
-  padding: 188px 0;
+  padding: 112px 0;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -105,7 +105,7 @@ img {
   margin: auto;
 }
 .header-section-one {
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
   line-height: 1.07;
   text-align: center;
@@ -266,7 +266,7 @@ img {
   align-items: center;
 }
 .section {
-  padding: 120px 0;
+  padding: 90px 0;
 }
 .section-three {
   padding-bottom: 120px;
@@ -381,7 +381,8 @@ img {
 }
 .list-section-five {
   display: flex;
-  gap: 24px;
+  row-gap: 72px;
+  column-gap: 16px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -735,7 +736,8 @@ body {
 }
 .mobile-top-elements {
   display: flex;
-  width: 100%;
+  width: 480px;
+  margin: auto;
   justify-content: space-between;
 }
 
@@ -778,8 +780,6 @@ body {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/PeopleOffice@2x.jpg);
-    max-width: 428px;
-    max-height: 432px;
   }
 }
 @media (min-width: 480px) {
@@ -788,9 +788,6 @@ body {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-  }
-  .address-points {
-    padding: 24px 0;
   }
 }
 
@@ -843,6 +840,15 @@ body {
   .style-address {
     flex-direction: column;
     gap: 12px;
+  }
+  .header-section-one {
+    font-size: 56px;
+  }
+  .section {
+    padding: 120px 0;
+  }
+  .address {
+    align-self: center;
   }
 }
 
@@ -898,12 +904,10 @@ body {
   }
   .list-section-five {
     flex-direction: row;
+    flex-wrap: nowrap;
   }
   .header-section-one {
     max-width: 496px;
-  }
-  .list-section-five {
-    flex-wrap: nowrap;
   }
   .logo-and-p {
     margin-right: 120px;
@@ -931,11 +935,21 @@ body {
     line-height: 1.1;
     text-align: left;
   }
-  .address-points {
-    padding: 24px 0;
-  }
+
   .style-address {
     flex-direction: row;
     gap: 40px;
+  }
+  .header-section-one {
+    font-size: 56px;
+  }
+  .section-one {
+    padding: 188px 0;
+  }
+  .section {
+    padding: 120px 0;
+  }
+  .address-points {
+    padding: 24px 0;
   }
 }
