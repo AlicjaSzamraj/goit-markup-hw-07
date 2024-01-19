@@ -855,8 +855,12 @@ body {
     width: 168px;
   }
   .icons-footer {
-    padding-left: 108px; 
-    justify-content:left;
+    padding-left: 108px;
+    justify-content: left;
+  }
+  .f-header {
+    text-transform: lowercase;
+  }
 }
 
 @media (min-width: 1158px) {
@@ -958,5 +962,8 @@ body {
   }
   .address-points {
     padding: 24px 0;
+  }
+  .f-header {
+    text-transform: lowercase;
   }
 }
