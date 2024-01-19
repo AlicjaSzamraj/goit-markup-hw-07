@@ -813,14 +813,12 @@ body {
   .form-container {
     align-items: normal;
   }
-  .section-points {
-    width: calc((100% - 72px) / 2);
-  }
   .header-section-one {
     max-width: 496px;
   }
   .display-style {
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 64px;
   }
   .logo-and-p {
     align-items: normal;
@@ -849,6 +847,12 @@ body {
   }
   .address {
     align-self: center;
+  }
+  .list-section-five {
+    column-gap: 24px;
+  }
+  .point-customers {
+    width: 168px;
   }
 }
 
