@@ -61,12 +61,12 @@ img {
   list-style: none;
 }
 .points {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--dark_grey1);
-  padding: 24px 0;
+  padding: 12px 0;
   display: inline-block;
 }
 .link:hover {
@@ -83,11 +83,22 @@ img {
   display: none;
 }
 .address-points {
-  font-size: 16px;
-  line-height: 1.5;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark_grey2);
-  display: inline-block;
+  display: flex;
+}
+
+.tel-point {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--dark_grey2);
+  display: flex;
+  color: var(--blue1);
 }
 .section-one {
   background-color: var(--dark_grey1);
@@ -515,6 +526,28 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.close-btn-modal {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-media-modal {
+  display: flex;
+  flex-direction: row;
+}
 .close-btn:hover {
   background-color: var(--blue2);
   border: none;
@@ -755,12 +788,17 @@ body {
   right: 0;
   background-color: var(--white1);
   flex-flow: column nowrap;
+  width: 428px;
+  height: 796px;
 }
 .mobile-nav-items .menu {
   display: flex;
   flex-flow: column nowrap;
   padding: 24px;
   gap: 20px;
+}
+.mobile-nav-items {
+  padding-left: 40px;
 }
 .mobile-nav-items .menu .link-active::after {
   display: none;
@@ -860,6 +898,19 @@ body {
   }
   .f-header {
     text-transform: lowercase;
+  }
+  .points {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  .address-points {
+    padding: 24px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    display: inline-block;
   }
 }
 
@@ -962,8 +1013,20 @@ body {
   }
   .address-points {
     padding: 24px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    display: inline-block;
   }
+
   .f-header {
     text-transform: lowercase;
+  }
+  .points {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
   }
 }

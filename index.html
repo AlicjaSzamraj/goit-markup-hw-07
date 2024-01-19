@@ -81,19 +81,9 @@
       </div>
       <div class="js-menu-container">
         <div class="mobile-menu-close">
-          <button class="menu-toggle js-close-menu">
-            <svg
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              ></path>
+          <button class="close-btn-modal js-close-menu">
+            <svg class="close-x" width="8" height="8">
+              <use href="./images/symbol.svg#icon-close"></use>
             </svg>
           </button>
         </div>
@@ -113,7 +103,9 @@
         <address class="address">
           <ul class="list menu style-address">
             <li>
-              <a class="address-points link contacts" href="tel:+110001111111"
+              <a
+                class="address-points link contacts tel-point"
+                href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
@@ -123,6 +115,36 @@
                 href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
+            </li>
+          </ul>
+          <ul class="social-media-modal list">
+            <li class="point-social-network">
+              <a class="link-style other-style" href="">
+                <svg class="icons-socialmedia" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="point-social-network">
+              <a class="link-style other-style" href="">
+                <svg class="icons-socialmedia" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="point-social-network">
+              <a class="link-style other-style" href="">
+                <svg class="icons-socialmedia" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="point-social-network">
+              <a class="link-style other-style" href="">
+                <svg class="icons-socialmedia" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </address>
